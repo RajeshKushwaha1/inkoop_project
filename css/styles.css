@@ -1,0 +1,288 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container-fluid {
+    margin: 0%;
+    padding: 0%;
+}
+
+.phone-view {
+    display: none;
+}
+
+.top-row {
+    display: flex;
+}
+
+.nav-left {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.navItems li {
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.cart-btn {
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    padding: 20px 50px;
+    background-color: tomato;
+    outline: none;
+    font-size: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.right-content {
+    display: inline-block;
+}
+
+.heading-para {
+    margin-top: 100px;
+    display: flex;
+}
+
+.heading {
+    font-size: 48px;
+    width: 70%;
+}
+
+.para {
+    width: 30%;
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 140px;
+}
+
+.para-bar {
+    margin-top: 30px;
+    width: 30%;
+    height: 5px;
+    background-color: red;
+}
+
+.cards-row {
+    margin-top: 50px;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-card {
+    width: 12rem;
+    display: inline-block;
+    height: 13rem;
+    border: 10px;
+    background-color: aliceblue;
+    border-radius: 10%;
+    box-shadow: 3px 2px 3px 4px #ccc;
+}
+
+.my-card>img {
+    width: 50%;
+    height: 45%;
+    border-radius: 50%;
+    margin-left: 23%;
+    margin-top: 10%;
+}
+
+.my-card>p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+
+@media(max-width:780px) {
+    .phone-view {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .phone-view h1 {
+        text-align: center;
+    }
+
+    .hamburger-icon {
+        margin-left: 10px;
+        color: tomato;
+    }
+
+    .cart-icon {
+        margin-right: 20px;
+        color: tomato;
+    }
+
+    .top-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-left {
+        display: none;
+        width: 100% !important;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+        background-color: aliceblue;
+        height: fit-content;
+    }
+
+    .navItems li {
+        width: 100%;
+        list-style-type: none;
+        padding: 2px;
+        margin-top: 5%;
+    }
+
+    .cart-btn {
+        width: 50px;
+        padding: 5px 10px;
+        background-color: tomato;
+        outline: none;
+        font-size: 15px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .right-content {}
+
+    .heading-para {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .heading {
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .para {
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 30px;
+        padding: 0px;
+        position: relative;
+        top: 350px;
+    }
+
+    .para-bar {
+        margin-top: 20px;
+        width: 30%;
+        height: 3px;
+        background-color: red;
+        margin-bottom: 30px;
+    }
+
+    .cards-row {
+        position: relative;
+        margin-top: 30px;
+        top: -160px;
+    }
+
+    .card-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 50px;
+    }
+
+    .my-card {
+        width: 45%;
+        height: 7rem;
+        background-color: aliceblue;
+        border-radius: 7%;
+        margin-top: 10px;
+        padding: 0 auto;
+        box-shadow: 1px 1px 2px 3px #ccc;
+
+    }
+
+    .my-card>img {
+        width: 50%;
+        height: 45%;
+        border-radius: 50%;
+        margin-left: 23%;
+        margin-top: 10%;
+    }
+
+    .last-card {
+        display: none;
+    }
+
+    .my-card>p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
